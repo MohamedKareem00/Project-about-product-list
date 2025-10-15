@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 🧠 معلومات عن صاحب المشروع -->
+    <meta name="author" content="Mohamed Kareem">
+    <meta name="description" content="A modern product list with shopping cart project created by Mohamed Kareem using HTML, CSS, and JavaScript.">
+    <!-- عنوان الصفحة -->
+    <title>Product list with cart</title>
+    
+    <!-- أيقونة الموقع -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+  
+    <!-- ملف التنسيق -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontaWesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- 
+  Project: Product List with Cart
+  Author: Mohamed Kareem
+  Date: 13 October 2025
+  Description: Simple responsive shopping cart project built using HTML, CSS, and JavaScript.
+-->
+
+  <!-- العنوان -->
+  <div class="container">
+        <!-- Products Section -->
+        <div class="products-section">
+            <h1>Desserts</h1>
+            <div class="products-grid">
+                
+                <!-- Product 1 -->
+                <div class="product-card" data-id="1">
+                    <img src="/assets/images/image-waffle-desktop.jpg" alt="Waffle with Berries" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Waffle</div>
+                        <div class="product-name">Waffle with Berries</div>
+                        <div class="product-price" data-price="6.50">$6.50</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(1)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-id="2">
+                    <img src="/assets/images/image-creme-brulee-desktop.jpg" alt="Waffle with Berries" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Crème Brûlée</div>
+                        <div class="product-name">Vanilla Bean Crème Brûlée</div>
+                        <div class="product-price" data-price="7.00">$7.00</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(2)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-id="3">
+                    <img src="/assets/images/image-macaron-desktop.jpg" alt="Waffle with Berries" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Macaron</div>
+                        <div class="product-name">Macaron Mix of Five</div>
+                        <div class="product-price" data-price="8.00">$8.00</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(3)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                        <div class="product-card" data-id="4">
+                    <img src="/assets/images/image-tiramisu-desktop.jpg" alt="Waffle with Berries" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Tiramisu</div>
+                        <div class="product-name">Classic Tiramisu</div>
+                        <div class="product-price" data-price="5.50">$5.50</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(4)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Product 5 -->
+                <div class="product-card" data-id="5">
+                    <img src="/assets/images/image-baklava-desktop.jpg" alt="Waffle with Berries" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Baklava</div>
+                        <div class="product-name">Pistachio Backlava</div>
+                        <div class="product-price" data-price="$4.00">$4.00</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(5)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                    <div class="product-card" data-id="6">
+                    <img src="/assets/images/image-meringue-desktop.jpg" alt="Waffle with Berries" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Pie</div>
+                        <div class="product-name">Lemon Meringue pie</div>
+                        <div class="product-price" data-price="5.00">$5.00</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(6)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                    <div class="product-card" data-id="7">
+                    <img src="/assets/images/image-cake-desktop.jpg" alt="Waffle with Berries" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Cake</div>
+                        <div class="product-name">Red Velet Cake</div>
+                        <div class="product-price" data-price="4.50">$4.50</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(7)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                    <div class="product-card" data-id="8">
+                    <img src="/assets/images/image-brownie-desktop.jpg" alt="Waffle with Berries" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Browine</div>
+                        <div class="product-name">Salted Caramel Browine</div>
+                        <div class="product-price" data-price="5.50">$5.50</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(8)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                    <div class="product-card" data-id="9">
+                    <img src="/assets/images/image-panna-cotta-desktop.jpg" alt="Waffle with Berries" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Panna Cotta</div>
+                        <div class="product-name">Venilla Panna Cotta</div>
+                        <div class="product-price" data-price="6.50">$6.50</div>
+                        <button class="add-to-cart-btn" onclick="addToCart(9)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+  <script src="main.js"></script>
+  </body>
+</html>
