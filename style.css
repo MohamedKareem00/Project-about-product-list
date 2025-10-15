@@ -44,10 +44,15 @@ h1 {
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+  box-shadow: 0.5s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-1px);
+  border-color: hsl(14, 86%, 42%);
+  box-shadow: 0 0 10px rgba(199, 85, 15, .5);
 }
 
 /* images */
@@ -114,7 +119,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #8b3e1b;
+  background: hsl(14, 86%, 42%);
   color: white;
   padding: 10px 15px;
   border-radius: 25px;
@@ -141,7 +146,7 @@ h1 {
 
 .quantity-btn.plus {
   background: white;
-  color: #8b3e1b;
+  color: hsl(14, 86%, 42%);
 }
 
 .quantity-btn.plus:hover {
@@ -194,6 +199,7 @@ h1 {
   flex: 1;
 }
 
+/* زرار الحذف  */
 .remove-btn {
   background: transparent;
   border: 1px solid #ddd;
@@ -273,10 +279,11 @@ h1 {
   color: hsl(159, 69%, 38%);
 }
 
+/* Confirm-btn زرار التاكيد  */
 .confirm-btn {
   width: 100%;
   padding: 15px;
-  background: #8b3e1b;
+  background: hsl(14, 86%, 42%);
   color: white;
   border: none;
   border-radius: 25px;
@@ -287,8 +294,10 @@ h1 {
 }
 
 .confirm-btn:hover {
-  background: #6d2e14;
+  background: hsl(14, 86%, 42%);
 }
+
+
 
 @media (max-width: 1024px) {
   .container {

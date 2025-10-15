@@ -3,12 +3,7 @@
 // -----------------------------
 const desserts = [
   { id: 1, name: "Waffle with Berries", price: 6.5, category: "Waffle" },
-  {
-    id: 2,
-    name: "Vanilla Bean Crème Brûlée",
-    price: 7.0,
-    category: "Crème Brûlée",
-  },
+  { id: 2, name: "Vanilla Bean Crème Brûlée", price: 7.0, category: "Crème Brûlée",},
   { id: 3, name: "Macaron Mix of Five", price: 8.0, category: "Macaron" },
   { id: 4, name: "Classic Tiramisu", price: 5.5, category: "Tiramisu" },
   { id: 5, name: "Pistachio Baklava", price: 4.0, category: "Baklava" },
