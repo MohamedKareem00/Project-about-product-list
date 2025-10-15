@@ -16,6 +16,12 @@ const desserts = [
   { id: 7, name: "Red Velvet Cake", price: 4.5, category: "Cake" },
   { id: 8, name: "Salted Caramel Brownie", price: 5.5, category: "Brownie" },
   { id: 9, name: "Vanilla Panna Cotta", price: 6.5, category: "Panna Cotta" },
+  { id: 10, name: "Red Velvet CupCake", price: 5.5, category: "CupCake" },
+  { id: 11, name: "Lemon Tart", price: 6.0, category: "Tart" },
+  { id: 12, name: "Strawberry Cheesecake Slice", price: 7.0, category: "Cheesecake" },
+  { id: 13, name: "Cocount Mousse Cup", price: 6.5, category: "Mousse Cake" },
+  { id: 14, name: "Caramel Pudding", price: 6.0, category: "Pudding" },
+  { id: 15, name: "Glazed Donuts", price: 3.5, category: "Donuts" },
 ];
 
 // -----------------------------
